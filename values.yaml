@@ -6,3 +6,7 @@ scraper:
   backendPath: lake/{}/temperature
 
 apikey: {{API_KEY}}
+
+telegram:
+  token: "{{TELEGRAM_TOKEN}}"
+  chatlist: "{{TELEGRAM_ALERT_CHATLIST}}"
