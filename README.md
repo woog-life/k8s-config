@@ -6,6 +6,6 @@ all values which are used for a kubernetes secret must be base64 encoded in the 
 
 - API_KEY: base64 encoded
 - KUBECONFIG: base64 encoded (kubectl action)
-- TELEGRAM-TOKEN: base64 encoded
+- TELEGRAM_TOKEN: base64 encoded
 - KUBECONFIG_RAW (helm action)
 - TELEGRAM_ALERT_CHATLIST: chat ids separated by `,` (no whitespaces)
