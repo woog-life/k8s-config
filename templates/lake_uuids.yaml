@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lake-uuids
+  namespace: wooglife
+data:
+  LARGE_WOOG_UUID: {{ .Values.lake_uuid.largeWoogUuid }}

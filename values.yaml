@@ -1,0 +1,8 @@
+lakeuuid:
+    largeWoogUuid: 69c8438b-5aef-442f-a70d-e0d783ea2b38
+
+scraper:
+  backendUrl: http://backend-service:61001
+  backendPath: lake/{}/temperature
+
+apikey: {{API_KEY}}

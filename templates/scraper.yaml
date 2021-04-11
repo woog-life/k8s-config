@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scraper-config
+  namespace: wooglife
+data:
+  BACKEND_URL: {{ .Values.scraper.backendUrl }}
+  BACKEND_PATH: {{ .Values.scraper.backendPath }}
