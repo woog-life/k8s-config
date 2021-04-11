@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: lake-uuids
-  namespace: wooglife
-data:
-  LARGE_WOOG_UUID: 69c8438b-5aef-442f-a70d-e0d783ea2b38

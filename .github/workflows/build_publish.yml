@@ -6,23 +6,13 @@ on:
       - master
 
 jobs:
-  lake_uuids:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: danielr1996/kubectl-action@1.0.0
-        name: apply config
+      - name: update values
+        run: sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" values.yaml
+      - uses: WyriHaximus/github-action-helm3@v2
         with:
-          kubeconfig: ${{ secrets.KUBECONFIG }}
-          args: apply -f lake_uuids.yaml
-  api_key:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: update tag in manifest.yml
-        run: sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" apikey.yaml
-      - uses: danielr1996/kubectl-action@1.0.0
-        name: apply config
-        with:
-          kubeconfig: ${{ secrets.KUBECONFIG }}
-          args: apply -f apikey.yaml
+          exec: helm upgrade config . --install --wait --atomic --values=./values.yaml
+          kubeconfig: '${{ secrets.KUBECONFIG }}'
