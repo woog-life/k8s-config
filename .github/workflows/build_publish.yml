@@ -15,4 +15,4 @@ jobs:
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm upgrade config . --install --wait --atomic --values=./values.yaml
-          kubeconfig: '${{ secrets.KUBECONFIG }}'
+          kubeconfig: '${{ secrets.KUBECONFIG_RAW }}'
