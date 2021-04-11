@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: twitterupdater-config
+  namespace: wooglife
+data:
+  BACKEND_URL: {{ .Values.twitterupdater.backendUrl }}
+  BACKEND_PATH: {{ .Values.twitterupdater.backendPath }}
+  TELEGRAM_CHATLIST: "{{ .Values.telegram.chatlist }}"

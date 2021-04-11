@@ -18,6 +18,10 @@ jobs:
           sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" values.yaml
           sed -i -e "s/{{TELEGRAM_TOKEN}}/${{ secrets.TELEGRAM_TOKEN }}/g" values.yaml
           sed -i -e "s/{{TELEGRAM_ALERT_CHATLIST}}/${{ secrets.TELEGRAM_ALERT_CHATLIST }}/g" values.yaml
+          sed -i -e "s/{{TWITTER_CONSUMER_KEY}}/${{ secrets.TWITTER_CONSUMER_KEY }}/g" values.yaml
+          sed -i -e "s/{{TWITTER_CONSUMER_SECRET}}/${{ secrets.TWITTER_CONSUMER_SECRET }}/g" values.yaml
+          sed -i -e "s/{{TWITTER_ACCESS_TOKEN}}/${{ secrets.TWITTER_ACCESS_TOKEN }}/g" values.yaml
+          sed -i -e "s/{{TWITTER_ACCESS_TOKEN_SECRET}}/${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}/g" values.yaml
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm lint
