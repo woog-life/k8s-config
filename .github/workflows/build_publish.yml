@@ -14,7 +14,7 @@ jobs:
         name: apply config
         with:
           kubeconfig: ${{ secrets.KUBECONFIG }}
-          args: apply -f lake-uuids.yaml
+          args: apply -f lake_uuids.yaml
   api_key:
     runs-on: ubuntu-latest
     steps:
