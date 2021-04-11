@@ -1,0 +1,28 @@
+name: Build/Publish docker image
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  lake_uuids:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: danielr1996/kubectl-action@1.0.0
+        name: apply config
+        with:
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          args: apply -f lake-uuids.yaml
+  api_key:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: update tag in manifest.yml
+        run: sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" apikey.yaml
+      - uses: danielr1996/kubectl-action@1.0.0
+        name: apply config
+        with:
+          kubeconfig: ${{ secrets.KUBECONFIG }}
+          args: apply -f apikey.yaml
