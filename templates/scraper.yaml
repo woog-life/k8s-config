@@ -6,4 +6,4 @@ metadata:
 data:
   BACKEND_URL: {{ .Values.scraper.backendUrl }}
   BACKEND_PATH: {{ .Values.scraper.backendPath }}
-  TELEGRAM_CHATLIST: {{ .Values.telegram.chatlist }}
+  TELEGRAM_CHATLIST: "{{ .Values.telegram.chatlist }}"
