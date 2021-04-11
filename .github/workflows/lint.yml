@@ -1,0 +1,23 @@
+name: lint helm chart
+
+on:
+  push:
+    branches:
+      - '*'
+      - '*/*'
+      - '**'
+      - '!master'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: update values
+        run: |
+          sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" values.yaml
+          sed -i -e "s/{{TELEGRAM_TOKEN}}/${{ secrets.TELEGRAM_TOKEN }}/g" values.yaml
+          sed -i -e "s/{{TELEGRAM_ALERT_CHATLIST}}/${{ secrets.TELEGRAM_ALERT_CHATLIST }}/g" values.yaml
+      - uses: WyriHaximus/github-action-helm3@v2
+        with:
+          exec: helm lint
