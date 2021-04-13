@@ -20,6 +20,7 @@ apikey: {{API_KEY}}
 telegram:
   token: "{{TELEGRAM_TOKEN}}"
   chatlisterrors: "{{TELEGRAM_ALERT_CHATLIST}}"
+  temperaturenotifierchatids: "{{TELEGRAM_TEMPERATURE_NOTIFY_LIST}}"
 
 openweathermap:
   apikey: "{{OPENWEATHERMAP_APIKEY}}"

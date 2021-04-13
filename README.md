@@ -15,3 +15,4 @@ all values which are used for a kubernetes secret must be base64 encoded in the 
 - TELEGRAM_ALERT_CHATLIST: chat ids separated by `,` (no whitespaces)
 - OPENWEATHERMAP_APIKEY: base64 encoded
 - OPENWEATHERMAP_APIKEY_RAW
+- TELEGRAM_TEMPERATURE_NOTIFY_LIST
