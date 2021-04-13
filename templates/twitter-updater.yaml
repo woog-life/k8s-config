@@ -6,4 +6,4 @@ metadata:
 data:
   BACKEND_URL: {{ .Values.twitterupdater.backendUrl }}
   BACKEND_PATH: {{ .Values.twitterupdater.backendPath }}
-  TELEGRAM_CHATLIST: "{{ .Values.telegram.chatlist }}"
+  TELEGRAM_CHATLIST: "{{ .Values.telegram.chatlisterrors }}"
