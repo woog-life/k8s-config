@@ -24,3 +24,8 @@ telegram:
 
 openweathermap:
   apikey: "{{OPENWEATHERMAP_APIKEY}}"
+
+github:
+  vpm:
+    client_id: "{{VPM_GITHUB_CLIENT_ID}}"
+    client_secret: "{{VPM_GITHUB_SECRET}}"

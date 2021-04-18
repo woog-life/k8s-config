@@ -18,3 +18,5 @@ all values which are used for a kubernetes secret must be base64 encoded in the 
 - TELEGRAM_TEMPERATURE_NOTIFY_LIST
 - TELEGRAM_CI_TOKEN_RAW (telegram CI)
 - CI_FAILURE_TELEGRAM_TO (telegram CI)
+- VPM_GITHUB_CLIENT_ID: base64 encoded
+- VPM_GITHUB_SECRET: base64 encoded

@@ -24,6 +24,8 @@ jobs:
           sed -i -e "s/{{TWITTER_ACCESS_TOKEN_SECRET}}/${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}/g" values.yaml
           sed -i -e "s/{{OPENWEATHERMAP_APIKEY}}/$(echo ${{ secrets.OPENWEATHERMAP_APIKEY }} | base64 -d)/g" values.yaml
           sed -i -e "s/{{TELEGRAM_TEMPERATURE_NOTIFY_LIST}}/${{ secrets.TELEGRAM_TEMPERATURE_NOTIFY_LIST }}/g" values.yaml
+          sed -i -e "s/{{VPM_GITHUB_CLIENT_ID}}/${{ secrets.VPM_GITHUB_CLIENT_ID }}/g" values.yaml
+          sed -i -e "s/{{VPM_GITHUB_SECRET}}/${{ secrets.VPM_GITHUB_SECRET }}/g" values.yaml
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm lint
