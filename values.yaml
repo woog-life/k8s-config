@@ -29,3 +29,10 @@ github:
   vpm:
     client_id: "{{VPM_GITHUB_CLIENT_ID}}"
     client_secret: "{{VPM_GITHUB_SECRET}}"
+
+vpm:
+  postgres:
+    hostname: "{{POSTGRES_HOSTNAME}}"
+    user: "{{POSTGRES_USER}}"
+    password: "{{POSTGRES_PASSWORD}}"
+    db: "{{POSTGRES_DB}}"

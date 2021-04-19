@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vpm-config
+  namespace: wooglife
+data:
+  POSTGRES_USER: {{ .Values.vpm.postgres.user }}
+  POSTGRES_DB: {{ .Values.vpm.postgres.db }}
+  POSTGRES_HOSTNAME: {{ .Values.vpm.postgres.hostname }}

@@ -20,3 +20,7 @@ all values which are used for a kubernetes secret must be base64 encoded in the 
 - CI_FAILURE_TELEGRAM_TO (telegram CI)
 - VPM_GITHUB_CLIENT_ID: base64 encoded
 - VPM_GITHUB_SECRET: base64 encoded
+- POSTGRES_PASSWORD: base64 encoded
+- POSTGRES_USER
+- POSTGRES_DB
+- POSTGRES_HOSTNAME
