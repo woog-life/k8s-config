@@ -2,7 +2,7 @@ lakeuuid:
     largeWoogUuid: 69c8438b-5aef-442f-a70d-e0d783ea2b38
 
 scraper:
-  backendUrl: http://backend-service:61001
+  backendUrl: http://api:80
   backendPath: lake/{}/temperature
 
 twitterupdater:
@@ -32,7 +32,8 @@ github:
 
 vpm:
   postgres:
-    hostname: "{{POSTGRES_HOSTNAME}}"
+    hostname: "vpm-postgres"
     user: "{{POSTGRES_USER}}"
     password: "{{POSTGRES_PASSWORD}}"
     db: "{{POSTGRES_DB}}"
+
