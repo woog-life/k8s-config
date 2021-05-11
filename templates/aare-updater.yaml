@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aareupdater-config
+  namespace: wooglife
+data:
+  TELEGRAM_CHATLIST: "{{ .Values.telegram.aare.chatlist }}"

@@ -21,6 +21,8 @@ telegram:
   token: "{{TELEGRAM_TOKEN}}"
   chatlisterrors: "{{TELEGRAM_ALERT_CHATLIST}}"
   temperaturenotifierchatids: "{{TELEGRAM_TEMPERATURE_NOTIFY_LIST}}"
+  aare:
+    chatlist: "139656428"
 
 openweathermap:
   apikey: "{{OPENWEATHERMAP_APIKEY}}"
@@ -36,4 +38,3 @@ vpm:
     user: "{{POSTGRES_USER}}"
     password: "{{POSTGRES_PASSWORD}}"
     db: "{{POSTGRES_DB}}"
-
