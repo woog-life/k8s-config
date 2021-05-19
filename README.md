@@ -5,6 +5,7 @@
 all values which are used for a kubernetes secret must be base64 encoded in the github secrets
 
 - API_KEY: base64 encoded
+- WOOG_POSTGRES_PASSWORD: base64 encoded
 - KUBECONFIG: base64 encoded (kubectl action)
 - TELEGRAM_TOKEN: base64 encoded
 - TWITTER_ACCESS_TOKEN: base64 encoded
