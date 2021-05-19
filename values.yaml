@@ -15,7 +15,10 @@ twitter:
   accesstoken: "{{TWITTER_ACCESS_TOKEN}}"
   accesstokensecret: "{{TWITTER_ACCESS_TOKEN_SECRET}}"
 
-apikey: {{API_KEY}}
+woog:
+  apikey: {{API_KEY}}
+  postgres:
+    password: "{{WOOG_POSTGRES_PASSWORD}}"
 
 telegram:
   token: "{{TELEGRAM_TOKEN}}"
