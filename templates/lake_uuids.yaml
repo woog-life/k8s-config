@@ -6,4 +6,4 @@ metadata:
 data:
   LARGE_WOOG_UUID: {{ .Values.lakeuuid.largeWoogUuid }}
   ARHEILGER_MUEHLCHEN_UUID: {{ .Values.lakeuuid.arheilgerMuehlchenUuid }}
-
+  ALSTER_UUID: {{ .Values.lakeuuid.alsterUuid }}
