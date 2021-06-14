@@ -5,3 +5,5 @@ metadata:
   namespace: wooglife
 data:
   LARGE_WOOG_UUID: {{ .Values.lakeuuid.largeWoogUuid }}
+  ARHEILGER_MUEHLCHEN_UUID: {{ .Values.lakeuuid.arheilgerMuehlchenUuid }}
+

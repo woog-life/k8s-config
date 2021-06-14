@@ -1,5 +1,6 @@
 lakeuuid:
     largeWoogUuid: 69c8438b-5aef-442f-a70d-e0d783ea2b38
+    arheilgerMuehlchenUuid: dd560e78-a902-43c5-b2f6-3b525efa5ce5
 
 scraper:
   backendUrl: http://api:80
