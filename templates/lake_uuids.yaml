@@ -9,3 +9,4 @@ data:
   ALSTER_UUID: {{ .Values.lakeuuid.alsterUuid }}
   CUXHAVEN_UUID: {{ .Values.lakeuuid.cuxhavenUuid }}
   POTSDAM_UUID: {{ .Values.lakeuuid.potsdamUuid }}
+  AARE_UUID: {{ .Values.lakeuuid.aareUuid }}
