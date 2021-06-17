@@ -8,3 +8,4 @@ data:
   ARHEILGER_MUEHLCHEN_UUID: {{ .Values.lakeuuid.arheilgerMuehlchenUuid }}
   ALSTER_UUID: {{ .Values.lakeuuid.alsterUuid }}
   CUXHAVEN_UUID: {{ .Values.lakeuuid.cuxhavenUuid }}
+  POTSDAM_UUID: {{ .Values.lakeuuid.potsdamUuid }}
