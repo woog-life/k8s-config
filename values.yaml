@@ -5,6 +5,7 @@ lakeuuid:
     cuxhavenUuid: d074654c-dedd-46c3-8042-af55c93c910e
     potsdamUuid: bedbdac7-7d61-48d5-b1bd-0de5be25e953
     aareUuid: acf32f07-e702-4e9e-b766-fb8993a71b21
+    cologneUuid: ab337e4e-7673-4b5e-9c95-393f06f548c8
 
 scraper:
   backendUrl: http://api:80

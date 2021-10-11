@@ -10,3 +10,4 @@ data:
   CUXHAVEN_UUID: {{ .Values.lakeuuid.cuxhavenUuid }}
   POTSDAM_UUID: {{ .Values.lakeuuid.potsdamUuid }}
   AARE_UUID: {{ .Values.lakeuuid.aareUuid }}
+  COLOGNE_UUID: {{ .Values.lakeuuid.cologneUuid }}
