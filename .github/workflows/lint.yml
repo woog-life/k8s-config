@@ -12,7 +12,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - name: update values
         run: |
           sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" values.yaml
