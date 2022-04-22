@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm upgrade config . --install --wait --atomic --namespace=wooglife
