@@ -4,10 +4,10 @@ metadata:
   name: lake-uuids
   namespace: wooglife
 data:
-  LARGE_WOOG_UUID: {{ .Values.lakeuuid.largeWoogUuid }}
-  ARHEILGER_MUEHLCHEN_UUID: {{ .Values.lakeuuid.arheilgerMuehlchenUuid }}
-  ALSTER_UUID: {{ .Values.lakeuuid.alsterUuid }}
-  CUXHAVEN_UUID: {{ .Values.lakeuuid.cuxhavenUuid }}
-  POTSDAM_UUID: {{ .Values.lakeuuid.potsdamUuid }}
-  AARE_UUID: {{ .Values.lakeuuid.aareUuid }}
-  COLOGNE_UUID: {{ .Values.lakeuuid.cologneUuid }}
+  LARGE_WOOG_UUID: {{ .Values.lakeuuid.largeWoog }}
+  ARHEILGER_MUEHLCHEN_UUID: {{ .Values.lakeuuid.arheilgerMuehlchen }}
+  ALSTER_UUID: {{ .Values.lakeuuid.alster }}
+  CUXHAVEN_UUID: {{ .Values.lakeuuid.cuxhaven }}
+  POTSDAM_UUID: {{ .Values.lakeuuid.potsdam }}
+  AARE_UUID: {{ .Values.lakeuuid.aare }}
+  COLOGNE_UUID: {{ .Values.lakeuuid.cologne }}

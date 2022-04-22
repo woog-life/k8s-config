@@ -1,49 +1,8 @@
 lakeuuid:
-    largeWoogUuid: 69c8438b-5aef-442f-a70d-e0d783ea2b38
-    arheilgerMuehlchenUuid: 25aa2968-e34e-4f86-87cc-56b16b5aff36
-    alsterUuid: 55e5f52a-2de8-458a-828f-3c043ef458d9
-    cuxhavenUuid: d074654c-dedd-46c3-8042-af55c93c910e
-    potsdamUuid: bedbdac7-7d61-48d5-b1bd-0de5be25e953
-    aareUuid: acf32f07-e702-4e9e-b766-fb8993a71b21
-    cologneUuid: ab337e4e-7673-4b5e-9c95-393f06f548c8
-
-scraper:
-  backendUrl: http://api:80
-  backendPath: lake/{}/temperature
-
-twitterupdater:
-  backendUrl: https://api.woog.life
-  backendPath: lake/{}
-
-twitter:
-  consumerkey: "{{TWITTER_CONSUMER_KEY}}"
-  consumersecret: "{{TWITTER_CONSUMER_SECRET}}"
-  accesstoken: "{{TWITTER_ACCESS_TOKEN}}"
-  accesstokensecret: "{{TWITTER_ACCESS_TOKEN_SECRET}}"
-
-woog:
-  apikey: {{API_KEY}}
-  postgres:
-    password: "{{WOOG_POSTGRES_PASSWORD}}"
-
-telegram:
-  token: "{{TELEGRAM_TOKEN}}"
-  chatlisterrors: "{{TELEGRAM_ALERT_CHATLIST}}"
-  temperaturenotifierchatids: "{{TELEGRAM_TEMPERATURE_NOTIFY_LIST}}"
-  aare:
-    chatlist: "139656428"
-
-openweathermap:
-  apikey: "{{OPENWEATHERMAP_APIKEY}}"
-
-github:
-  vpm:
-    client_id: "{{VPM_GITHUB_CLIENT_ID}}"
-    client_secret: "{{VPM_GITHUB_SECRET}}"
-
-vpm:
-  postgres:
-    hostname: "vpm-postgres"
-    user: "{{POSTGRES_USER}}"
-    password: "{{POSTGRES_PASSWORD}}"
-    db: "{{POSTGRES_DB}}"
+    largeWoog: 69c8438b-5aef-442f-a70d-e0d783ea2b38
+    arheilgerMuehlchen: 25aa2968-e34e-4f86-87cc-56b16b5aff36
+    alster: 55e5f52a-2de8-458a-828f-3c043ef458d9
+    cuxhaven: d074654c-dedd-46c3-8042-af55c93c910e
+    potsdam: bedbdac7-7d61-48d5-b1bd-0de5be25e953
+    aare: acf32f07-e702-4e9e-b766-fb8993a71b21
+    cologne: ab337e4e-7673-4b5e-9c95-393f06f548c8
