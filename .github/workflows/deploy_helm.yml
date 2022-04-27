@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - name: update values
+        run: |
+          sed -i -e "s/{{API_KEY}}/${{ secrets.API_KEY }}/g" values.yaml
+          sed -i -e "s/{{WOOG_POSTGRES_PASSWORD}}/${{ secrets.WOOG_POSTGRES_PASSWORD }}/g" values.yaml
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm upgrade config . --install --wait --atomic --namespace=wooglife
