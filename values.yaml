@@ -9,6 +9,6 @@ lakeuuid:
     blaarmeersen: ab6fbeb2-be73-4223-8f04-425929339838
 
 woog:
-  apikey: {{API_KEY}}
+  apikey: __API_KEY__
   postgres:
-    password: "{{WOOG_POSTGRES_PASSWORD}}"
+    password: "__WOOG_POSTGRES_PASSWORD__"
