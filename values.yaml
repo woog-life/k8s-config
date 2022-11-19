@@ -6,6 +6,7 @@ lakeuuid:
     potsdam: bedbdac7-7d61-48d5-b1bd-0de5be25e953
     aare: acf32f07-e702-4e9e-b766-fb8993a71b21
     cologne: ab337e4e-7673-4b5e-9c95-393f06f548c8
+    blaarmeersen: ab6fbeb2-be73-4223-8f04-425929339838
 
 woog:
   apikey: {{API_KEY}}

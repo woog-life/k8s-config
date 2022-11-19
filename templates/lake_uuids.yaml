@@ -11,3 +11,4 @@ data:
   POTSDAM_UUID: {{ .Values.lakeuuid.potsdam }}
   AARE_UUID: {{ .Values.lakeuuid.aare }}
   COLOGNE_UUID: {{ .Values.lakeuuid.cologne }}
+  BLAARMEERSEN_UUID: {{ .Values.lakeuuid.blaarmeersen }}
