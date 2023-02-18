@@ -12,3 +12,5 @@ data:
   AARE_UUID: {{ .Values.lakeuuid.aare }}
   COLOGNE_UUID: {{ .Values.lakeuuid.cologne }}
   BLAARMEERSEN_UUID: {{ .Values.lakeuuid.blaarmeersen }}
+  SANTANDER_UUID: {{ .Values.lakeuuid.santander }}
+  HERAKLION_UUID: {{ .Values.lakeuuid.heraklion }}
