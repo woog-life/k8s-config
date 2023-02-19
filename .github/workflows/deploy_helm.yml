@@ -13,7 +13,6 @@ jobs:
       - name: update values
         run: |
           sed -i -e "s/__API_KEY__/${{ secrets.API_KEY }}/g" values.yaml
-          sed -i -e "s/__WOOG_POSTGRES_PASSWORD__/${{ secrets.WOOG_POSTGRES_PASSWORD }}/g" values.yaml
       - uses: WyriHaximus/github-action-helm3@v2
         with:
           exec: helm upgrade config . --install --wait --atomic --namespace=wooglife

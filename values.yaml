@@ -12,5 +12,3 @@ lakeuuid:
 
 woog:
   apikey: __API_KEY__
-  postgres:
-    password: "__WOOG_POSTGRES_PASSWORD__"
