@@ -14,3 +14,4 @@ data:
   BLAARMEERSEN_UUID: {{ .Values.lakeuuid.blaarmeersen }}
   SANTANDER_UUID: {{ .Values.lakeuuid.santander }}
   HERAKLION_UUID: {{ .Values.lakeuuid.heraklion }}
+  HUSUM_UUID: {{ .Values.lakeuuid.husum }}
