@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: update values
         run: |
           sed -i -e "s/__API_KEY__/${{ secrets.API_KEY }}/g" values.yaml
