@@ -16,3 +16,4 @@ data:
   HERAKLION_UUID: {{ .Values.lakeuuid.heraklion }}
   HUSUM_UUID: {{ .Values.lakeuuid.husum }}
   VANCOUVER_UUID: {{ .Values.lakeuuid.vancouver }}
+  SORRENTO_UUID: {{ .Values.lakeuuid.sorrento }}
