@@ -11,6 +11,7 @@ lakeuuid:
     santander: a2595d6a-a6fc-4ee3-86b4-871f32f28b4c
     husum: 18e6931a-3729-4ad9-8301-03c5980f82b6
     vancouver: fb086a0d-dc93-40fc-ad41-b6dbe0358f0b
+    sorrento: 4ddb043b-d0d2-44a5-b321-6efbaacf98a0
 
 woog:
   apikey: __API_KEY__
