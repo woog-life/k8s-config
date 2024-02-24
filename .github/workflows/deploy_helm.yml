@@ -13,7 +13,7 @@ jobs:
       - name: update values
         run: |
           sed -i -e "s/__API_KEY__/${{ secrets.API_KEY }}/g" values.yaml
-      - uses: WyriHaximus/github-action-helm3@v3
+      - uses: WyriHaximus/github-action-helm3@v4
         with:
           exec: helm upgrade config . --install --wait --atomic --namespace=wooglife
           kubeconfig: '${{ secrets.KUBECONFIG_RAW }}'
